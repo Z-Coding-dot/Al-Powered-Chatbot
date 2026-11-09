@@ -16,7 +16,6 @@ const ChatMessage = ({messages, formatTime, isDefaultMessage}) => {
         <div className={`flex max-w-[88%] md:max-w-[70%] rounded-2xl px-5 py-3.5 bg-light-100 dark:bg-dark-100`}>
                 <div className={`flex-shrink-0 mr-2 `}>
                     {messages.sender === 'user' ? <User className='size-5'/> : <Bot className='size-6 dark:text-indigo-400 text-indigo-900' />}
-
                 </div>
                 <div className="flex-1">
                     <div className='mb-3 mr-3 flex items-center justify-between'>
